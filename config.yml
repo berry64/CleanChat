@@ -1,0 +1,14 @@
+BarAPI: false
+BarMessage: "&b&l %player 又骂脏话了!~"
+BarTime: 5
+
+takemoney: 0
+todowhenoutofmoney: "kick and ban and clearmoney and clearinv"
+reason: "&想骂人要有钱!"
+
+runcommand: false
+commandtype: console
+command: "mute %player 10s"
+
+notifysender: true
+notification: "&c&l此服务器禁止说 %message !"
