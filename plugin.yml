@@ -1,0 +1,29 @@
+name: CleanChat
+version: 0.0.1
+main: net.berry64.CleanChat.ENT
+author: berry64
+softdepend: [Vault, BarAPI]
+commands:
+  cc:
+    usage: CleanChatMain
+permissions:
+  cc.pass:
+    default: no
+  cc.add:
+    default: op
+  cc.remove:
+    default: op
+  cc.help:
+    default: op
+  cc.reload:
+    default: op
+  cc.check:
+    default: yes
+  cc.*:
+    children:
+      cc.pass: true
+      cc.add: true
+      cc.remove: true
+      cc.reload: true
+      cc.check: true
+      cc.help: true
